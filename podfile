@@ -1,0 +1,63 @@
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+project 'Rightly/Rightly.project'
+platform:ios, '10.0'
+use_frameworks!
+inhibit_all_warnings!
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '10.0'
+        end
+    end
+end
+
+target 'Rightly' do
+  #地图
+  pod 'AMap3DMap-NO-IDFA'
+  pod 'AMapSearch-NO-IDFA'
+  pod 'AMapLocation-NO-IDFA'
+  pod 'BonMot','5.6.0'
+  pod 'Permission','3.1.2'
+  pod 'FSPagerView','0.8.3'
+  pod 'SnapKit','5.0.1' #Autolayout
+  pod 'Moya','14.0.0'  #网络封装
+  pod 'NVActivityIndicatorView','4.7.0' #loading
+#  pod 'Kingfisher' ,'6.2.1' #图片加载
+  pod 'KingfisherWebP','1.3.0'
+  pod 'Moya/RxSwift'
+  pod 'RxSwift', '5.1.1'
+  pod 'RxCocoa', '5.1.1'
+  pod 'NSObject+Rx', '5.1.0'
+  pod 'RxDataSources','4.0.1'
+  pod 'Reusable','4.1.1'
+  pod 'MJRefresh','3.6.1'
+  pod 'IQKeyboardManagerSwift','6.5.6'
+  pod 'MBProgressHUD','1.2.0'
+  pod 'ZLPhotoBrowser', '4.1.3'
+  pod 'KMPlaceholderTextView', '1.4.0'
+  pod 'KTVHTTPCache', '2.0.0'
+  pod 'KakaJSON', :git => 'git@github.com:jiangqc5656/KakaJSON.git',:tag => '1.1.3'
+  pod 'RealmSwift'
+  pod 'TagListView', '~> 1.4.1'
+  pod 'UICircularProgressRing'
+  pod 'JCore', '2.1.4-noidfa'
+  pod 'JPush', '3.2.4-noidfa'
+  pod 'MZTimerLabel'
+  pod 'JXSegmentedView','~> 1.2.7'
+  pod 'JXPagingView/Paging','~> 2.0.13'
+  pod 'JXPhotoBrowser','~> 3.1.3'
+  pod 'URLNavigator','2.3.0'
+  
+  #工具
+  pod 'Bugly' , '2.5.90'
+  pod 'FLEX' , '4.1.1', :configurations => ["Debug"]
+#  pod 'MLeaksFinder', :configurations => ["Debug"]
+  
+  # 友盟
+  pod 'UMCommon','7.3.1'
+  
+  # 网易云信
+  pod 'NIMSDK_LITE','8.5.1'
+  
+end
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eGj-aO-EF3" customClass="NewMessageTaskTipView" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QKk-VW-yWP">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videotask" translatesAutoresizingMaskIntoConstraints="NO" id="9Ub-LC-zml">
+                    <rect key="frame" x="30" y="15" width="0.0" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="Hb2-r6-VhF"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voice task" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyF-Zp-Zwf">
+                    <rect key="frame" x="38" y="15" width="348" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="w8y-tL-xG7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱神的箭卡就是登记卡就开始登记卡手机壳 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJO-eM-XeM">
+                    <rect key="frame" x="38" y="43" width="348" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="QKk-VW-yWP" firstAttribute="leading" secondItem="eGj-aO-EF3" secondAttribute="leading" id="13B-qq-LIQ"/>
+                <constraint firstItem="bJO-eM-XeM" firstAttribute="leading" secondItem="MyF-Zp-Zwf" secondAttribute="leading" id="5dk-nB-ogf"/>
+                <constraint firstItem="9Ub-LC-zml" firstAttribute="bottom" secondItem="MyF-Zp-Zwf" secondAttribute="bottom" id="C5B-0e-UHy"/>
+                <constraint firstItem="9Ub-LC-zml" firstAttribute="top" secondItem="eGj-aO-EF3" secondAttribute="top" constant="15" id="IS4-jp-7Hr"/>
+                <constraint firstAttribute="bottom" secondItem="QKk-VW-yWP" secondAttribute="bottom" id="K6y-wu-QXh"/>
+                <constraint firstItem="QKk-VW-yWP" firstAttribute="top" secondItem="eGj-aO-EF3" secondAttribute="top" id="LNu-Th-BCY"/>
+                <constraint firstAttribute="trailing" secondItem="QKk-VW-yWP" secondAttribute="trailing" id="QWa-5I-LIk"/>
+                <constraint firstItem="9Ub-LC-zml" firstAttribute="top" secondItem="MyF-Zp-Zwf" secondAttribute="top" id="Rg2-dg-YdS"/>
+                <constraint firstItem="bJO-eM-XeM" firstAttribute="top" secondItem="MyF-Zp-Zwf" secondAttribute="bottom" constant="6" id="dtB-aq-jwl"/>
+                <constraint firstItem="9Ub-LC-zml" firstAttribute="leading" secondItem="eGj-aO-EF3" secondAttribute="leading" constant="30" id="e9k-MO-sf1"/>
+                <constraint firstAttribute="trailing" secondItem="bJO-eM-XeM" secondAttribute="trailing" constant="28" id="ere-FI-ey2"/>
+                <constraint firstItem="MyF-Zp-Zwf" firstAttribute="leading" secondItem="9Ub-LC-zml" secondAttribute="trailing" constant="8" symbolic="YES" id="nFB-Ss-FQI"/>
+                <constraint firstAttribute="trailing" secondItem="MyF-Zp-Zwf" secondAttribute="trailing" constant="28" id="x8m-gm-OLl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="img" destination="QKk-VW-yWP" id="Pai-TB-ygw"/>
+                <outlet property="largetTitleLable" destination="MyF-Zp-Zwf" id="hVm-Mc-DPr"/>
+                <outlet property="lblDes" destination="bJO-eM-XeM" id="KeS-Vv-nt0"/>
+            </connections>
+            <point key="canvasLocation" x="-1210.144927536232" y="-8.3705357142857135"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="videotask" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

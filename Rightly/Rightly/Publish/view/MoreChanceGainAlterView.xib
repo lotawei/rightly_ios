@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ms5-IW-qTP" customClass="MoreChanceGainAlterView" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="351"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="morechance_alter" translatesAutoresizingMaskIntoConstraints="NO" id="rgC-DB-V7d">
+                    <rect key="frame" x="0.0" y="0.0" width="436" height="122"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="122" id="9dT-oZ-Nmw"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure to log out?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnM-Ay-0N3">
+                    <rect key="frame" x="32" y="176" width="372" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVZ-Yr-sQL">
+                    <rect key="frame" x="176.5" y="136" width="83" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="Qrw-UZ-IsQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drd-Nz-0Yn">
+                    <rect key="frame" x="106.5" y="251" width="223" height="41"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="223" id="70o-ny-0WI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Sure">
+                        <color key="titleColor" red="0.1476058364" green="0.82772845029999997" blue="0.8170079589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="31"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="doneBlockclick:" destination="ms5-IW-qTP" eventType="touchUpInside" id="hRQ-D8-9yp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="v69-1b-SsJ"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mVZ-Yr-sQL" firstAttribute="top" secondItem="rgC-DB-V7d" secondAttribute="bottom" constant="14" id="6qg-iG-3hW"/>
+                <constraint firstItem="drd-Nz-0Yn" firstAttribute="centerX" secondItem="v69-1b-SsJ" secondAttribute="centerX" id="Hf7-uk-jrG"/>
+                <constraint firstItem="v69-1b-SsJ" firstAttribute="trailing" secondItem="NnM-Ay-0N3" secondAttribute="trailing" constant="32" id="JZK-VE-xWu"/>
+                <constraint firstItem="NnM-Ay-0N3" firstAttribute="leading" secondItem="v69-1b-SsJ" secondAttribute="leading" constant="32" id="Jbh-dX-7Af"/>
+                <constraint firstItem="drd-Nz-0Yn" firstAttribute="bottom" secondItem="v69-1b-SsJ" secondAttribute="bottom" constant="-25" id="W3p-wm-tFT"/>
+                <constraint firstItem="NnM-Ay-0N3" firstAttribute="top" secondItem="mVZ-Yr-sQL" secondAttribute="bottom" constant="11" id="WCD-g0-kyG"/>
+                <constraint firstItem="v69-1b-SsJ" firstAttribute="trailing" secondItem="rgC-DB-V7d" secondAttribute="trailing" id="XNH-IO-wgO"/>
+                <constraint firstItem="rgC-DB-V7d" firstAttribute="top" secondItem="ms5-IW-qTP" secondAttribute="top" id="h1G-1Y-Dr5"/>
+                <constraint firstItem="rgC-DB-V7d" firstAttribute="leading" secondItem="v69-1b-SsJ" secondAttribute="leading" id="lcC-WX-BGv"/>
+                <constraint firstItem="mVZ-Yr-sQL" firstAttribute="centerX" secondItem="ms5-IW-qTP" secondAttribute="centerX" id="s4d-IC-3iD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="img" destination="rgC-DB-V7d" id="Q4e-3O-iUI"/>
+                <outlet property="largetitle" destination="mVZ-Yr-sQL" id="C26-KR-ZXD"/>
+                <outlet property="subtitle" destination="NnM-Ay-0N3" id="qcI-pX-NTk"/>
+                <outlet property="surebtn" destination="drd-Nz-0Yn" id="Wj6-ad-ghP"/>
+            </connections>
+            <point key="canvasLocation" x="-868.11594202898561" y="-224.66517857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="morechance_alter" width="295" height="122"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

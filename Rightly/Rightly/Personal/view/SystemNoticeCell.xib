@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="250" id="Bos-cv-jJJ" customClass="SystemNoticeCell" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bos-cv-jJJ" id="Lsb-g6-gaO">
+                <rect key="frame" x="0.0" y="0.0" width="485" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greetingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="27R-JO-B4O">
+                        <rect key="frame" x="12" y="67" width="54" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="IV8-5W-AQU"/>
+                            <constraint firstAttribute="width" constant="54" id="W3a-KR-jhY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="27"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:06 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Huy-SD-bvA">
+                        <rect key="frame" x="218" y="24" width="49" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.74223130940000004" green="0.74234008789999995" blue="0.77088338140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Right.ly community! Finish the chat up task and start chatting with new friends! " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luQ-Fm-s33">
+                        <rect key="frame" x="74" y="67" width="399" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="27R-JO-B4O" firstAttribute="leading" secondItem="Lsb-g6-gaO" secondAttribute="leading" constant="12" id="HGa-ky-Yci"/>
+                    <constraint firstItem="Huy-SD-bvA" firstAttribute="centerX" secondItem="Lsb-g6-gaO" secondAttribute="centerX" id="NfS-wf-zak"/>
+                    <constraint firstItem="27R-JO-B4O" firstAttribute="top" secondItem="Huy-SD-bvA" secondAttribute="bottom" constant="16" id="YkP-qW-VyR"/>
+                    <constraint firstItem="Huy-SD-bvA" firstAttribute="top" secondItem="Lsb-g6-gaO" secondAttribute="top" constant="24" id="gEp-QF-WHR"/>
+                    <constraint firstAttribute="trailing" secondItem="luQ-Fm-s33" secondAttribute="trailing" constant="12" id="hLD-7g-9F8"/>
+                    <constraint firstAttribute="bottom" secondItem="27R-JO-B4O" secondAttribute="bottom" constant="21" id="icV-IQ-BJE"/>
+                    <constraint firstItem="luQ-Fm-s33" firstAttribute="leading" secondItem="27R-JO-B4O" secondAttribute="trailing" constant="8" id="lFc-1I-FwA"/>
+                    <constraint firstItem="luQ-Fm-s33" firstAttribute="top" secondItem="Huy-SD-bvA" secondAttribute="bottom" constant="16" id="wif-Kz-V9n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content" destination="luQ-Fm-s33" id="eIC-ru-aGg"/>
+                <outlet property="imgicon" destination="27R-JO-B4O" id="MZr-MR-Ka5"/>
+            </connections>
+            <point key="canvasLocation" x="-2810.8695652173915" y="-579.24107142857144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="greetingIcon" width="54" height="54"/>
+    </resources>
+</document>

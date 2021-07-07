@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5jk-xc-tYD" customClass="GreetingItemBottomView" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ldv-A6-jFo">
+                    <rect key="frame" x="0.0" y="30" width="414" height="75"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nax-vZ-GxL">
+                            <rect key="frame" x="0.0" y="0.0" width="138" height="75"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="Top" image="itemtop">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="itemClick:" destination="5jk-xc-tYD" eventType="touchUpInside" id="dhC-nO-ue6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqL-Ir-ldL">
+                            <rect key="frame" x="138" y="0.0" width="138" height="75"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="Permissions" image="itemprivacy">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="itemClick:" destination="5jk-xc-tYD" eventType="touchUpInside" id="22Q-eQ-Ss9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ly-gi-zTA">
+                            <rect key="frame" x="276" y="0.0" width="138" height="75"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="Delete" image="itemdelete">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="itemClick:" destination="5jk-xc-tYD" eventType="touchUpInside" id="BC2-44-6ca"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="YqL-Ir-ldL" firstAttribute="height" secondItem="nax-vZ-GxL" secondAttribute="height" id="SAq-Re-hWO"/>
+                        <constraint firstItem="nax-vZ-GxL" firstAttribute="height" secondItem="ldv-A6-jFo" secondAttribute="height" id="StR-qt-SEn"/>
+                        <constraint firstAttribute="height" constant="75" id="s3d-HH-jfc"/>
+                        <constraint firstItem="2Ly-gi-zTA" firstAttribute="height" secondItem="nax-vZ-GxL" secondAttribute="height" id="x7R-52-1Om"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lS5-00-LvA">
+                    <rect key="frame" x="0.0" y="148" width="414" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelclick:" destination="5jk-xc-tYD" eventType="touchUpInside" id="7SU-OU-Vvs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ldv-A6-jFo" secondAttribute="trailing" id="0qA-MM-shc"/>
+                <constraint firstItem="ldv-A6-jFo" firstAttribute="top" secondItem="5jk-xc-tYD" secondAttribute="top" constant="30" id="2PP-Hd-3yR"/>
+                <constraint firstItem="ldv-A6-jFo" firstAttribute="leading" secondItem="5jk-xc-tYD" secondAttribute="leading" id="OfW-3N-e1p"/>
+                <constraint firstAttribute="trailing" secondItem="lS5-00-LvA" secondAttribute="trailing" id="PxU-1q-RcE"/>
+                <constraint firstAttribute="bottom" secondItem="lS5-00-LvA" secondAttribute="bottom" constant="20" id="v7w-7u-qHJ"/>
+                <constraint firstItem="lS5-00-LvA" firstAttribute="leading" secondItem="5jk-xc-tYD" secondAttribute="leading" id="yaE-CK-3BH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="btncancel" destination="lS5-00-LvA" id="HEV-f2-5Ng"/>
+                <outletCollection property="btnsubViews" destination="nax-vZ-GxL" collectionClass="NSMutableArray" id="WUs-uX-Z80"/>
+                <outletCollection property="btnsubViews" destination="YqL-Ir-ldL" collectionClass="NSMutableArray" id="AB6-sr-IcG"/>
+                <outletCollection property="btnsubViews" destination="2Ly-gi-zTA" collectionClass="NSMutableArray" id="3cR-OY-MSF"/>
+            </connections>
+            <point key="canvasLocation" x="-255" y="-37"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="itemdelete" width="48" height="48"/>
+        <image name="itemprivacy" width="48" height="48"/>
+        <image name="itemtop" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

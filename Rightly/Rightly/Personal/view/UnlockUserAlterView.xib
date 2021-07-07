@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="geD-F1-OWR" customClass="UnlockUserAlterView" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="351"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unlocksuccessback" translatesAutoresizingMaskIntoConstraints="NO" id="U92-Cj-fcn">
+                    <rect key="frame" x="0.0" y="0.0" width="436" height="122"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="122" id="4p9-fD-tFY"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure to log out?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvi-6x-n5E">
+                    <rect key="frame" x="32" y="176" width="372" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIs-fF-ald">
+                    <rect key="frame" x="176.5" y="136" width="83" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="zIC-IP-x4d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01X-UL-AFT">
+                    <rect key="frame" x="106.5" y="230" width="223" height="62"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="Cnk-s2-SXa"/>
+                        <constraint firstAttribute="width" constant="223" id="U9l-Tc-Zb3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Sure">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="31"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="doneBlockclick:" destination="geD-F1-OWR" eventType="touchUpInside" id="UBQ-4b-RMf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="5Zp-JX-dsV"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="U92-Cj-fcn" firstAttribute="leading" secondItem="5Zp-JX-dsV" secondAttribute="leading" id="9XF-Wy-8yS"/>
+                <constraint firstItem="01X-UL-AFT" firstAttribute="centerX" secondItem="5Zp-JX-dsV" secondAttribute="centerX" id="Ijk-9K-wLr"/>
+                <constraint firstItem="5Zp-JX-dsV" firstAttribute="trailing" secondItem="Bvi-6x-n5E" secondAttribute="trailing" constant="32" id="KeA-ec-Cca"/>
+                <constraint firstItem="Bvi-6x-n5E" firstAttribute="top" secondItem="nIs-fF-ald" secondAttribute="bottom" constant="11" id="aLA-gH-3bN"/>
+                <constraint firstItem="U92-Cj-fcn" firstAttribute="top" secondItem="geD-F1-OWR" secondAttribute="top" id="bCS-ab-gLg"/>
+                <constraint firstItem="nIs-fF-ald" firstAttribute="centerX" secondItem="geD-F1-OWR" secondAttribute="centerX" id="ccM-ec-D8q"/>
+                <constraint firstItem="nIs-fF-ald" firstAttribute="top" secondItem="U92-Cj-fcn" secondAttribute="bottom" constant="14" id="g0a-7o-Zga"/>
+                <constraint firstItem="5Zp-JX-dsV" firstAttribute="trailing" secondItem="U92-Cj-fcn" secondAttribute="trailing" id="icC-XB-6Gb"/>
+                <constraint firstItem="01X-UL-AFT" firstAttribute="bottom" secondItem="5Zp-JX-dsV" secondAttribute="bottom" constant="-25" id="my3-Wk-bA6"/>
+                <constraint firstItem="Bvi-6x-n5E" firstAttribute="leading" secondItem="5Zp-JX-dsV" secondAttribute="leading" constant="32" id="zW5-sT-Sxb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="img" destination="U92-Cj-fcn" id="J2I-Mk-Ugg"/>
+                <outlet property="largetitle" destination="nIs-fF-ald" id="RTk-aU-EsN"/>
+                <outlet property="subtitle" destination="Bvi-6x-n5E" id="szl-Nf-kiR"/>
+                <outlet property="surebtn" destination="01X-UL-AFT" id="DAl-01-JUg"/>
+            </connections>
+            <point key="canvasLocation" x="-868.11594202898561" y="-224.66517857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="unlocksuccessback" width="295" height="122"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

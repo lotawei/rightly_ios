@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MatchRrefreshEmptyView" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="619"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0F-Sl-Aik">
+                    <rect key="frame" x="20" y="55" width="373" height="373"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_page_match" translatesAutoresizingMaskIntoConstraints="NO" id="MUa-Dt-bRc">
+                            <rect key="frame" x="122.5" y="122.5" width="128" height="128"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="128" id="7LO-PC-GPk"/>
+                                <constraint firstAttribute="height" constant="128" id="BQb-MP-z8q"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="V0F-Sl-Aik" secondAttribute="height" id="8Ge-02-SST"/>
+                        <constraint firstItem="MUa-Dt-bRc" firstAttribute="centerY" secondItem="V0F-Sl-Aik" secondAttribute="centerY" id="At9-kr-sU6"/>
+                        <constraint firstItem="MUa-Dt-bRc" firstAttribute="centerX" secondItem="V0F-Sl-Aik" secondAttribute="centerX" id="VGD-Kk-jnq"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIQ-Sd-hqB">
+                    <rect key="frame" x="20" y="439" width="373" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="2JN-Dk-Fem"/>
+                    </constraints>
+                    <state key="normal" title="哎呀找不到网络了">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.1524475813" green="0.85577625040000005" blue="0.84162139889999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SIQ-Sd-hqB" firstAttribute="leading" secondItem="V0F-Sl-Aik" secondAttribute="leading" id="2J6-i3-rYS"/>
+                <constraint firstItem="SIQ-Sd-hqB" firstAttribute="trailing" secondItem="V0F-Sl-Aik" secondAttribute="trailing" id="InH-kR-LDx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="V0F-Sl-Aik" secondAttribute="trailing" constant="20" id="N5e-E7-ldm"/>
+                <constraint firstItem="V0F-Sl-Aik" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="11" id="Rmx-1I-UPR"/>
+                <constraint firstItem="SIQ-Sd-hqB" firstAttribute="top" secondItem="V0F-Sl-Aik" secondAttribute="bottom" constant="11" id="nX1-XE-rZz"/>
+                <constraint firstItem="V0F-Sl-Aik" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="xuS-Qd-vdd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btncontent" destination="SIQ-Sd-hqB" id="cIW-0i-pZt"/>
+                <outlet property="placeimage" destination="MUa-Dt-bRc" id="TCK-ut-rNS"/>
+            </connections>
+            <point key="canvasLocation" x="-34.057971014492757" y="98.772321428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="empty_page_match" width="140" height="140"/>
+    </resources>
+</document>

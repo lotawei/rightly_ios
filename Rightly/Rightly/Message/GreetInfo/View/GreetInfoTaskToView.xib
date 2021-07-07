@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GreetInfoTaskToView" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SDs-We-rd5">
+                    <rect key="frame" x="366" y="8" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="tRa-wd-vOF"/>
+                        <constraint firstAttribute="height" constant="40" id="u1b-7y-sjw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tah-mV-xIx">
+                    <rect key="frame" x="70" y="8" width="288" height="90"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tah-mV-xIx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="70" id="BlZ-B1-5lp"/>
+                <constraint firstItem="SDs-We-rd5" firstAttribute="leading" secondItem="tah-mV-xIx" secondAttribute="trailing" constant="8" id="G9w-N5-LGF"/>
+                <constraint firstAttribute="bottom" secondItem="tah-mV-xIx" secondAttribute="bottom" constant="8" id="OKI-qh-pk3"/>
+                <constraint firstAttribute="trailing" secondItem="SDs-We-rd5" secondAttribute="trailing" constant="8" id="RBd-6P-VcF"/>
+                <constraint firstItem="SDs-We-rd5" firstAttribute="top" secondItem="tah-mV-xIx" secondAttribute="top" id="YqV-MF-mht"/>
+                <constraint firstItem="SDs-We-rd5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="q96-pr-M2Z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bodyview" destination="tah-mV-xIx" id="uP1-Mx-ndt"/>
+                <outlet property="headImageView" destination="SDs-We-rd5" id="1U6-Fo-H97"/>
+            </connections>
+            <point key="canvasLocation" x="28.985507246376812" y="341.18303571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

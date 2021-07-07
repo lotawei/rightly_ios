@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="newGreetId" rowHeight="178" id="KGk-i7-Jjw" customClass="SessionNewGreetTableViewCell" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sessionlist_new_greet_icon" translatesAutoresizingMaskIntoConstraints="NO" id="RTx-py-QZd">
+                        <rect key="frame" x="16" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="NFm-BT-Pi4"/>
+                            <constraint firstAttribute="width" constant="50" id="hY1-Pw-Jbi"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="New greeting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AL4-sb-vGm">
+                        <rect key="frame" x="74" y="12" width="98" height="19.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.098039215690000001" green="0.1019607843" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="no people finished your chat up task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALN-t4-Ecd">
+                        <rect key="frame" x="74" y="37" width="200" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVA-xo-LpE">
+                        <rect key="frame" x="282" y="23" width="20" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGX-bd-gXq">
+                                <rect key="frame" x="4" y="0.0" width="12" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.22352941179999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tGX-bd-gXq" firstAttribute="top" secondItem="nVA-xo-LpE" secondAttribute="top" id="97E-5i-EV8"/>
+                            <constraint firstItem="tGX-bd-gXq" firstAttribute="leading" secondItem="nVA-xo-LpE" secondAttribute="leading" constant="4" id="CXO-xL-3wX"/>
+                            <constraint firstAttribute="bottom" secondItem="tGX-bd-gXq" secondAttribute="bottom" id="bhJ-0X-yyi"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="dNw-lA-CmE"/>
+                            <constraint firstAttribute="trailing" secondItem="tGX-bd-gXq" secondAttribute="trailing" constant="4" id="fth-tS-mpk"/>
+                            <constraint firstAttribute="height" constant="20" id="qAv-BN-oAk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nVA-xo-LpE" secondAttribute="trailing" constant="18" id="67x-Ta-T5J"/>
+                    <constraint firstItem="ALN-t4-Ecd" firstAttribute="bottom" secondItem="RTx-py-QZd" secondAttribute="bottom" constant="-4" id="6Ab-RA-SrL"/>
+                    <constraint firstItem="nVA-xo-LpE" firstAttribute="leading" secondItem="ALN-t4-Ecd" secondAttribute="trailing" constant="8" id="EvA-Sn-sd6"/>
+                    <constraint firstItem="AL4-sb-vGm" firstAttribute="top" secondItem="RTx-py-QZd" secondAttribute="top" constant="4" id="HQ4-7I-gxP"/>
+                    <constraint firstItem="RTx-py-QZd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="auD-Tj-CTd"/>
+                    <constraint firstItem="AL4-sb-vGm" firstAttribute="leading" secondItem="ALN-t4-Ecd" secondAttribute="leading" id="e6e-U6-6ah"/>
+                    <constraint firstItem="AL4-sb-vGm" firstAttribute="leading" secondItem="RTx-py-QZd" secondAttribute="trailing" constant="8" id="ilP-yy-sV1"/>
+                    <constraint firstItem="nVA-xo-LpE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AL4-sb-vGm" secondAttribute="trailing" constant="8" id="lAo-jf-wdj"/>
+                    <constraint firstItem="nVA-xo-LpE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yu2-Yc-IDa"/>
+                    <constraint firstItem="RTx-py-QZd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="z3L-wB-HVt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="ALN-t4-Ecd" id="Mhc-S6-l4l"/>
+                <outlet property="titleLabel" destination="AL4-sb-vGm" id="8qs-WZ-pN5"/>
+                <outlet property="unreadNumLabel" destination="tGX-bd-gXq" id="33k-bl-YI8"/>
+                <outlet property="unreadView" destination="nVA-xo-LpE" id="ElV-AJ-FDk"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sessionlist_new_greet_icon" width="54" height="54"/>
+    </resources>
+</document>

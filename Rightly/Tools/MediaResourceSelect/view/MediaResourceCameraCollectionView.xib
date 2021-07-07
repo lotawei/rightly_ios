@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="Vbh-4h-cRq" customClass="MediaResourceCameraCollectionView" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="169" height="232"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="t6t-2M-yvj">
+                <rect key="frame" x="0.0" y="0.0" width="169" height="232"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTD-d6-2VT">
+                        <rect key="frame" x="0.0" y="0.0" width="169" height="232"/>
+                        <color key="backgroundColor" red="0.93866497280000005" green="0.93879979849999995" blue="0.93863546850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="Camera" image="camera">
+                            <color key="titleColor" red="0.72418981790000003" green="0.72791326050000005" blue="0.76015627379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="cameralAction:" destination="Vbh-4h-cRq" eventType="touchUpInside" id="dQl-lK-Ii1"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nTD-d6-2VT" firstAttribute="leading" secondItem="t6t-2M-yvj" secondAttribute="leading" id="2gM-SN-I2A"/>
+                    <constraint firstAttribute="trailing" secondItem="nTD-d6-2VT" secondAttribute="trailing" id="ZQC-Xw-NqU"/>
+                    <constraint firstAttribute="bottom" secondItem="nTD-d6-2VT" secondAttribute="bottom" id="oGi-jz-mUc"/>
+                    <constraint firstItem="nTD-d6-2VT" firstAttribute="top" secondItem="t6t-2M-yvj" secondAttribute="top" id="w94-Dw-Trk"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="6"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </collectionViewCellContentView>
+            <size key="customSize" width="84" height="267"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="btncamera" destination="nTD-d6-2VT" id="jtk-LR-DjI"/>
+            </connections>
+            <point key="canvasLocation" x="-1715" y="-57"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="camera" width="20" height="20"/>
+    </resources>
+</document>

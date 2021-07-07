@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="fromGreetingId" rowHeight="164" id="KGk-i7-Jjw" customClass="MessageFromGreetingTableViewCell" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kfh-JR-7Te">
+                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="O82-ni-2LM"/>
+                            <constraint firstAttribute="width" constant="40" id="Oiv-XZ-auU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HND-tf-1I4">
+                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOZ-gN-W3F">
+                        <rect key="frame" x="56" y="8" width="194" height="76"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="76" id="Uf5-98-FkW"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVF-Sc-mpU">
+                        <rect key="frame" x="56" y="92" width="194" height="40"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="89x-bU-WMC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="Accept">
+                            <color key="titleColor" red="0.1529411765" green="0.82745098039999998" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                        <state key="selected" image="greet_to_adopted_icon">
+                            <color key="titleColor" red="0.15294117647058825" green="0.82745098039215681" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="XOZ-gN-W3F" secondAttribute="trailing" constant="70" id="2Zk-73-jvH"/>
+                    <constraint firstItem="XOZ-gN-W3F" firstAttribute="top" secondItem="Kfh-JR-7Te" secondAttribute="top" id="CJJ-gO-nQE"/>
+                    <constraint firstItem="HND-tf-1I4" firstAttribute="trailing" secondItem="Kfh-JR-7Te" secondAttribute="trailing" id="WJY-Yw-rey"/>
+                    <constraint firstItem="TVF-Sc-mpU" firstAttribute="top" secondItem="XOZ-gN-W3F" secondAttribute="bottom" constant="8" id="Ycp-tY-hgf"/>
+                    <constraint firstItem="HND-tf-1I4" firstAttribute="bottom" secondItem="Kfh-JR-7Te" secondAttribute="bottom" id="YgL-PZ-8JA"/>
+                    <constraint firstItem="TVF-Sc-mpU" firstAttribute="leading" secondItem="XOZ-gN-W3F" secondAttribute="leading" id="ZPT-wl-oHG"/>
+                    <constraint firstItem="Kfh-JR-7Te" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ZXJ-IZ-l2R"/>
+                    <constraint firstItem="TVF-Sc-mpU" firstAttribute="trailing" secondItem="XOZ-gN-W3F" secondAttribute="trailing" id="cdx-iT-SVR"/>
+                    <constraint firstItem="Kfh-JR-7Te" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ezq-Rc-RUs"/>
+                    <constraint firstItem="XOZ-gN-W3F" firstAttribute="leading" secondItem="Kfh-JR-7Te" secondAttribute="trailing" constant="8" id="ku4-ev-N15"/>
+                    <constraint firstItem="HND-tf-1I4" firstAttribute="top" secondItem="Kfh-JR-7Te" secondAttribute="top" id="rQa-d8-arr"/>
+                    <constraint firstItem="HND-tf-1I4" firstAttribute="leading" secondItem="Kfh-JR-7Te" secondAttribute="leading" id="yE6-6X-u7W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="acceptBtn" destination="TVF-Sc-mpU" id="uDn-h7-Nuh"/>
+                <outlet property="greetInfoView" destination="XOZ-gN-W3F" id="mE1-dL-2mj"/>
+                <outlet property="headBtn" destination="HND-tf-1I4" id="j1I-PH-zBj"/>
+                <outlet property="headImageView" destination="Kfh-JR-7Te" id="Rv9-4O-kC3"/>
+            </connections>
+            <point key="canvasLocation" x="345" y="45"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="greet_to_adopted_icon" width="12" height="9"/>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GreetInfoTitleView" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjd-TP-nhN">
+                    <rect key="frame" x="67.5" y="8" width="279" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knq-IN-uqr">
+                            <rect key="frame" x="44" y="8" width="215" height="29"/>
+                            <string key="text">You and Username have established a
+private connection</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greet_link_icon" translatesAutoresizingMaskIntoConstraints="NO" id="j0r-hd-oSf">
+                            <rect key="frame" x="12" y="11" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="4R3-Vj-uzF"/>
+                                <constraint firstAttribute="width" constant="22" id="8Xn-0A-jXr"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="knq-IN-uqr" firstAttribute="leading" secondItem="jjd-TP-nhN" secondAttribute="leading" constant="44" id="CXC-Me-dT2"/>
+                        <constraint firstAttribute="trailing" secondItem="knq-IN-uqr" secondAttribute="trailing" constant="20" id="EI9-B3-RpE"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="280" id="ENB-tx-Gwg"/>
+                        <constraint firstItem="knq-IN-uqr" firstAttribute="top" secondItem="jjd-TP-nhN" secondAttribute="top" constant="8" id="Q74-vy-jvb"/>
+                        <constraint firstAttribute="height" constant="44" id="Wao-ff-PdG"/>
+                        <constraint firstAttribute="bottom" secondItem="knq-IN-uqr" secondAttribute="bottom" constant="7" id="aeJ-Vk-wxu"/>
+                        <constraint firstItem="j0r-hd-oSf" firstAttribute="centerY" secondItem="jjd-TP-nhN" secondAttribute="centerY" id="l6z-zp-2Eg"/>
+                        <constraint firstItem="j0r-hd-oSf" firstAttribute="leading" secondItem="jjd-TP-nhN" secondAttribute="leading" constant="12" id="mDD-Xi-kqH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jjd-TP-nhN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HwJ-Tf-nQP"/>
+                <constraint firstAttribute="bottom" secondItem="jjd-TP-nhN" secondAttribute="bottom" constant="8" id="L09-EZ-lPE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="knq-IN-uqr" id="7Qz-ao-iws"/>
+            </connections>
+            <point key="canvasLocation" x="131.19999999999999" y="428.18590704647681"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="greet_link_icon" width="17" height="17"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

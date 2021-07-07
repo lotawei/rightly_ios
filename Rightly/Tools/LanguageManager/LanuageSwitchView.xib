@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aDy-Kv-1Jc" customClass="LanuageSwitchView" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qsc-gT-3hz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QR0-mL-FUb">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                            <state key="normal" title="english"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="english"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="changeAction:" destination="aDy-Kv-1Jc" eventType="touchUpInside" id="NRz-JS-vrT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAi-yl-b14">
+                            <rect key="frame" x="0.0" y="64" width="414" height="54"/>
+                            <state key="normal" title="简体中文"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="chinese"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="changeAction:" destination="aDy-Kv-1Jc" eventType="touchUpInside" id="7Z6-Dr-O6w"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="dGN-br-t79"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qsc-gT-3hz" firstAttribute="leading" secondItem="dGN-br-t79" secondAttribute="leading" id="Bz0-vi-OVi"/>
+                <constraint firstItem="dGN-br-t79" firstAttribute="bottom" secondItem="qsc-gT-3hz" secondAttribute="bottom" id="WX3-cd-ZTW"/>
+                <constraint firstItem="dGN-br-t79" firstAttribute="trailing" secondItem="qsc-gT-3hz" secondAttribute="trailing" id="Y0c-Jc-Wk1"/>
+                <constraint firstItem="qsc-gT-3hz" firstAttribute="top" secondItem="aDy-Kv-1Jc" secondAttribute="top" id="odT-i2-jWg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="6"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outletCollection property="itemsbtn" destination="QR0-mL-FUb" collectionClass="NSMutableArray" id="fw0-Tz-yl5"/>
+                <outletCollection property="itemsbtn" destination="eAi-yl-b14" collectionClass="NSMutableArray" id="L03-m1-HM6"/>
+            </connections>
+            <point key="canvasLocation" x="-207" y="-329"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

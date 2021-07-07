@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" ambiguous="YES" id="iN0-l3-epB" customClass="CommentEditView" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46t-bL-35G">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="pE0-bl-uSF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0DP-Xl-6GR">
+                    <rect key="frame" x="12" y="8" width="351" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giC-GK-Sc5">
+                            <rect key="frame" x="0.0" y="0.0" width="303" height="40"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Oic-Rj-2WO" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
+                                    <rect key="frame" x="8" y="0.0" width="287" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="发布评论"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Oic-Rj-2WO" firstAttribute="leading" secondItem="giC-GK-Sc5" secondAttribute="leading" constant="8" id="P4q-Kx-itT"/>
+                                <constraint firstAttribute="bottom" secondItem="Oic-Rj-2WO" secondAttribute="bottom" id="a24-00-uXN"/>
+                                <constraint firstItem="Oic-Rj-2WO" firstAttribute="top" secondItem="giC-GK-Sc5" secondAttribute="top" id="jE8-0n-Tqj"/>
+                                <constraint firstAttribute="trailing" secondItem="Oic-Rj-2WO" secondAttribute="trailing" constant="8" id="jHo-0H-eMN"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krq-O1-2Mn">
+                            <rect key="frame" x="311" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="LBS-nd-5t5"/>
+                                <constraint firstAttribute="width" constant="40" id="RY5-bw-GnR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="message_edit_send_btn">
+                                <color key="titleColor" systemColor="systemOrangeColor"/>
+                            </state>
+                            <state key="disabled" image="message_edit_send_disbtn">
+                                <color key="titleColor" systemColor="systemGray5Color"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="giC-GK-Sc5" firstAttribute="leading" secondItem="0DP-Xl-6GR" secondAttribute="leading" id="Bnh-Vd-Pfb"/>
+                        <constraint firstAttribute="height" constant="40" id="TeM-at-Iyb"/>
+                        <constraint firstItem="Krq-O1-2Mn" firstAttribute="leading" secondItem="giC-GK-Sc5" secondAttribute="trailing" constant="8" id="Zgd-Mc-l8Q"/>
+                        <constraint firstItem="Krq-O1-2Mn" firstAttribute="centerY" secondItem="0DP-Xl-6GR" secondAttribute="centerY" id="d0A-qa-XEP"/>
+                        <constraint firstAttribute="trailing" secondItem="Krq-O1-2Mn" secondAttribute="trailing" id="gjI-V8-QjZ"/>
+                        <constraint firstItem="giC-GK-Sc5" firstAttribute="top" secondItem="0DP-Xl-6GR" secondAttribute="top" id="gsh-0t-7zu"/>
+                        <constraint firstAttribute="bottom" secondItem="giC-GK-Sc5" secondAttribute="bottom" id="huF-if-B1R"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0DP-Xl-6GR" secondAttribute="bottom" constant="8" id="3Fx-fR-bO5"/>
+                <constraint firstAttribute="trailing" secondItem="0DP-Xl-6GR" secondAttribute="trailing" constant="12" id="98m-2U-HOS"/>
+                <constraint firstItem="46t-bL-35G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9ar-ho-9r0"/>
+                <constraint firstItem="0DP-Xl-6GR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Reb-4A-Ux4"/>
+                <constraint firstItem="46t-bL-35G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="U9R-RF-AF5"/>
+                <constraint firstItem="0DP-Xl-6GR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="iGz-VL-PUZ"/>
+                <constraint firstAttribute="trailing" secondItem="46t-bL-35G" secondAttribute="trailing" id="mWO-fj-4f9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sendBtn" destination="Krq-O1-2Mn" id="ks3-6R-gnq"/>
+                <outlet property="textView" destination="Oic-Rj-2WO" id="SOa-g8-yuP"/>
+                <outlet property="textViewBottom" destination="3Fx-fR-bO5" id="AhL-tX-2w2"/>
+                <outlet property="textViewHeight" destination="TeM-at-Iyb" id="eJs-f8-uKo"/>
+            </connections>
+            <point key="canvasLocation" x="119.2" y="405.69715142428788"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="message_edit_send_btn" width="41" height="40"/>
+        <image name="message_edit_send_disbtn" width="41" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MessageEditView" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mF3-zr-DFS">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="R5m-3R-rdw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXq-J8-S6g">
+                    <rect key="frame" x="12" y="6" width="390" height="42"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kL-zE-5px">
+                            <rect key="frame" x="0.0" y="0.0" width="334" height="42"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bjK-sL-G55" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
+                                    <rect key="frame" x="0.0" y="0.0" width="334" height="42"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="42" id="KUI-09-e5b"/>
+                                    </constraints>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Type something"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="bjK-sL-G55" firstAttribute="top" secondItem="4kL-zE-5px" secondAttribute="top" id="2QD-gu-3tB"/>
+                                <constraint firstItem="bjK-sL-G55" firstAttribute="leading" secondItem="4kL-zE-5px" secondAttribute="leading" id="3TY-E1-Fps"/>
+                                <constraint firstAttribute="bottom" secondItem="bjK-sL-G55" secondAttribute="bottom" id="Xon-dy-GEg"/>
+                                <constraint firstAttribute="trailing" secondItem="bjK-sL-G55" secondAttribute="trailing" id="vWf-qi-GVj"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9L-15-1ly">
+                            <rect key="frame" x="342" y="1" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Lo0-ig-dd7"/>
+                                <constraint firstAttribute="width" constant="40" id="kSL-iZ-F06"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="message_edit_send_btn">
+                                <color key="titleColor" systemColor="systemOrangeColor"/>
+                            </state>
+                            <state key="disabled" image="message_edit_send_disbtn">
+                                <color key="titleColor" systemColor="systemGray5Color"/>
+                            </state>
+                            <connections>
+                                <action selector="sendBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Icg-8B-bNP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="o9L-15-1ly" firstAttribute="centerY" secondItem="jXq-J8-S6g" secondAttribute="centerY" id="4TD-N3-B3E"/>
+                        <constraint firstAttribute="trailing" secondItem="o9L-15-1ly" secondAttribute="trailing" constant="8" id="9Qg-hE-E9X"/>
+                        <constraint firstAttribute="bottom" secondItem="4kL-zE-5px" secondAttribute="bottom" id="JaS-Jf-l6F"/>
+                        <constraint firstItem="4kL-zE-5px" firstAttribute="top" secondItem="jXq-J8-S6g" secondAttribute="top" id="PrN-Ee-G7Z"/>
+                        <constraint firstItem="o9L-15-1ly" firstAttribute="leading" secondItem="4kL-zE-5px" secondAttribute="trailing" constant="8" id="bG4-UF-wpC"/>
+                        <constraint firstItem="4kL-zE-5px" firstAttribute="leading" secondItem="jXq-J8-S6g" secondAttribute="leading" id="uaY-wF-cNc"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dzT-EX-Lkn">
+                    <rect key="frame" x="0.0" y="52" width="414" height="32"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8c-Ip-JPS">
+                            <rect key="frame" x="0.0" y="4" width="103.5" height="24"/>
+                            <state key="normal" image="message_audio_btn">
+                                <color key="titleColor" systemColor="systemOrangeColor"/>
+                            </state>
+                            <state key="selected" image="message_audio_btned">
+                                <color key="titleColor" systemColor="systemRedColor"/>
+                            </state>
+                            <connections>
+                                <action selector="audioBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="CPA-zl-Mqg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTQ-1B-gPs">
+                            <rect key="frame" x="103.5" y="4" width="103.5" height="24"/>
+                            <state key="normal" image="message_edit_image_btn">
+                                <color key="titleColor" systemColor="systemOrangeColor"/>
+                            </state>
+                            <state key="selected" image="message_edit_image_btned">
+                                <color key="titleColor" systemColor="systemRedColor"/>
+                            </state>
+                            <connections>
+                                <action selector="imageBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1A1-BC-sl3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hr8-Mp-zYf">
+                            <rect key="frame" x="207" y="4" width="103.5" height="24"/>
+                            <state key="normal" image="message_edit_camera_btn">
+                                <color key="titleColor" systemColor="systemOrangeColor"/>
+                            </state>
+                            <state key="selected" image="message_edit_camera_btned">
+                                <color key="titleColor" systemColor="systemRedColor"/>
+                            </state>
+                            <connections>
+                                <action selector="cameraBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="lOt-Nz-MX2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNi-Ay-m1w">
+                            <rect key="frame" x="310.5" y="4" width="103.5" height="24"/>
+                            <state key="normal" image="message_edit_emoji_btn">
+                                <color key="titleColor" systemColor="systemOrangeColor"/>
+                            </state>
+                            <state key="selected" image="message_edit_emoji_btned">
+                                <color key="titleColor" systemColor="systemRedColor"/>
+                            </state>
+                            <connections>
+                                <action selector="emojiBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="lrO-4q-Wo6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="uW1-Eo-nzv"/>
+                    </constraints>
+                </stackView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oyo-pi-U2V">
+                    <rect key="frame" x="8" y="88" width="398" height="300"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="O6S-zU-2Wg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jXq-J8-S6g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="1IG-0a-cru"/>
+                <constraint firstItem="jXq-J8-S6g" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="8Bo-82-UqB"/>
+                <constraint firstAttribute="bottom" secondItem="jXq-J8-S6g" secondAttribute="bottom" constant="40" id="8lr-QC-ANs"/>
+                <constraint firstAttribute="trailing" secondItem="jXq-J8-S6g" secondAttribute="trailing" constant="12" id="AFl-0D-c7Q"/>
+                <constraint firstItem="dzT-EX-Lkn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="B7v-Or-Rgg"/>
+                <constraint firstAttribute="trailing" secondItem="oyo-pi-U2V" secondAttribute="trailing" constant="8" id="CSF-k4-XXO"/>
+                <constraint firstItem="dzT-EX-Lkn" firstAttribute="top" secondItem="jXq-J8-S6g" secondAttribute="bottom" constant="4" id="Dxf-XS-NDo"/>
+                <constraint firstItem="oyo-pi-U2V" firstAttribute="top" secondItem="dzT-EX-Lkn" secondAttribute="bottom" constant="4" id="MLI-xf-evG"/>
+                <constraint firstItem="mF3-zr-DFS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PPp-M9-0Gt"/>
+                <constraint firstItem="mF3-zr-DFS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XfP-hm-u9K"/>
+                <constraint firstAttribute="trailing" secondItem="dzT-EX-Lkn" secondAttribute="trailing" id="a9I-P6-VEB"/>
+                <constraint firstAttribute="trailing" secondItem="mF3-zr-DFS" secondAttribute="trailing" id="dEJ-x1-sKO"/>
+                <constraint firstItem="oyo-pi-U2V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="nU5-Lq-JjH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="audioBtn" destination="H8c-Ip-JPS" id="NbV-ev-VZY"/>
+                <outlet property="cameraBtn" destination="Hr8-Mp-zYf" id="yji-g3-9w6"/>
+                <outlet property="emojiBtn" destination="mNi-Ay-m1w" id="A5E-Vr-mzj"/>
+                <outlet property="imageBtn" destination="VTQ-1B-gPs" id="DuK-7k-NoI"/>
+                <outlet property="moreView" destination="oyo-pi-U2V" id="4rD-zk-S0U"/>
+                <outlet property="moreViewHeight" destination="O6S-zU-2Wg" id="hi7-MK-sOW"/>
+                <outlet property="sendBtn" destination="o9L-15-1ly" id="5gJ-qi-nhK"/>
+                <outlet property="textView" destination="bjK-sL-G55" id="A5n-Wu-aWV"/>
+                <outlet property="textViewBottom" destination="8lr-QC-ANs" id="OLc-PX-Kmp"/>
+                <outlet property="textViewHeight" destination="KUI-09-e5b" id="au1-pK-TKX"/>
+            </connections>
+            <point key="canvasLocation" x="131.19999999999999" y="470.46476761619192"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="message_audio_btn" width="24" height="24"/>
+        <image name="message_audio_btned" width="24" height="24"/>
+        <image name="message_edit_camera_btn" width="24" height="24"/>
+        <image name="message_edit_camera_btned" width="24" height="24"/>
+        <image name="message_edit_emoji_btn" width="24" height="24"/>
+        <image name="message_edit_emoji_btned" width="24" height="24"/>
+        <image name="message_edit_image_btn" width="24" height="24"/>
+        <image name="message_edit_image_btned" width="24" height="24"/>
+        <image name="message_edit_send_btn" width="41" height="40"/>
+        <image name="message_edit_send_disbtn" width="41" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

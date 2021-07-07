@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="5dd-9f-GTH" customClass="UserSwitchSettingCell" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="486" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5dd-9f-GTH" id="VPg-v9-i5R">
+                <rect key="frame" x="0.0" y="0.0" width="486" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emu-sv-MQz">
+                        <rect key="frame" x="24" y="16" width="67" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="EjA-YG-t6d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0w-kW-HyE">
+                        <rect key="frame" x="421" y="11" width="51" height="31"/>
+                        <connections>
+                            <action selector="valueChange:" destination="5dd-9f-GTH" eventType="valueChanged" id="9ZU-eZ-5OS"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="W0w-kW-HyE" secondAttribute="trailing" constant="16" id="DqJ-n1-ET3"/>
+                    <constraint firstAttribute="bottom" secondItem="Emu-sv-MQz" secondAttribute="bottom" constant="16" id="d6J-aQ-SR7"/>
+                    <constraint firstItem="W0w-kW-HyE" firstAttribute="centerY" secondItem="Emu-sv-MQz" secondAttribute="centerY" id="hVC-rJ-Gy4"/>
+                    <constraint firstItem="Emu-sv-MQz" firstAttribute="leading" secondItem="VPg-v9-i5R" secondAttribute="leading" constant="24" id="jfd-Qx-IBS"/>
+                    <constraint firstItem="Emu-sv-MQz" firstAttribute="top" secondItem="VPg-v9-i5R" secondAttribute="top" constant="16" id="y2N-u6-tLA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lbltxt" destination="Emu-sv-MQz" id="CdJ-ek-GsQ"/>
+                <outlet property="notifyswitch" destination="W0w-kW-HyE" id="Ap9-Ir-xp8"/>
+            </connections>
+            <point key="canvasLocation" x="-1323" y="-169"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="CQx-yA-G6R" customClass="AvatarSelectCollectionView" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SyB-JS-6Pb">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1F-hF-kRk">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="38"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.0" green="0.84177666900000003" blue="0.82053321599999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A8R-Xl-Ysy">
+                        <rect key="frame" x="6" y="6" width="38" height="38"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="32"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5c-6c-waO">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <action selector="selectInfoAction:" destination="CQx-yA-G6R" eventType="touchUpInside" id="0ww-4Y-8lH"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A8R-Xl-Ysy" firstAttribute="leading" secondItem="SyB-JS-6Pb" secondAttribute="leading" constant="6" id="2hd-UV-BWn"/>
+                    <constraint firstItem="h1F-hF-kRk" firstAttribute="top" secondItem="SyB-JS-6Pb" secondAttribute="top" id="68S-GC-iMo"/>
+                    <constraint firstAttribute="bottom" secondItem="T5c-6c-waO" secondAttribute="bottom" id="ExI-0S-FF4"/>
+                    <constraint firstItem="T5c-6c-waO" firstAttribute="top" secondItem="SyB-JS-6Pb" secondAttribute="top" id="FVj-J6-hQG"/>
+                    <constraint firstAttribute="bottom" secondItem="A8R-Xl-Ysy" secondAttribute="bottom" constant="6" id="Ht9-32-jGP"/>
+                    <constraint firstAttribute="trailing" secondItem="h1F-hF-kRk" secondAttribute="trailing" id="KMT-WR-J7c"/>
+                    <constraint firstItem="h1F-hF-kRk" firstAttribute="leading" secondItem="SyB-JS-6Pb" secondAttribute="leading" id="TSX-Qf-Q6G"/>
+                    <constraint firstAttribute="trailing" secondItem="T5c-6c-waO" secondAttribute="trailing" id="WtO-hU-drZ"/>
+                    <constraint firstAttribute="bottom" secondItem="h1F-hF-kRk" secondAttribute="bottom" id="Ylk-1q-Lhp"/>
+                    <constraint firstItem="T5c-6c-waO" firstAttribute="leading" secondItem="SyB-JS-6Pb" secondAttribute="leading" id="dtD-XE-arO"/>
+                    <constraint firstAttribute="trailing" secondItem="A8R-Xl-Ysy" secondAttribute="trailing" constant="6" id="fRw-X2-59A"/>
+                    <constraint firstItem="A8R-Xl-Ysy" firstAttribute="top" secondItem="SyB-JS-6Pb" secondAttribute="top" constant="6" id="whj-lR-Xhd"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="btn" destination="T5c-6c-waO" id="OKz-dL-MPS"/>
+                <outlet property="imgview" destination="A8R-Xl-Ysy" id="ZwN-S6-KY2"/>
+                <outlet property="selectLayer" destination="h1F-hF-kRk" id="d1R-4X-3I6"/>
+            </connections>
+            <point key="canvasLocation" x="-257" y="-38"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

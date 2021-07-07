@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GreetInfoGreetFromView" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NUS-MJ-eiS">
+                    <rect key="frame" x="8" y="8" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="MIF-FJ-DV1"/>
+                        <constraint firstAttribute="width" constant="40" id="sTC-5j-V0z"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oG2-zP-Lcf">
+                    <rect key="frame" x="8" y="8" width="40" height="40"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jna-Qh-8yF">
+                    <rect key="frame" x="56" y="8" width="288" height="76"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOO-S8-yBF">
+                    <rect key="frame" x="56" y="92" width="288" height="40"/>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WcN-hq-akB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Accept">
+                        <color key="titleColor" red="0.1529411765" green="0.82745098039999998" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fOO-S8-yBF" firstAttribute="leading" secondItem="jna-Qh-8yF" secondAttribute="leading" id="43q-62-gTV"/>
+                <constraint firstItem="jna-Qh-8yF" firstAttribute="leading" secondItem="NUS-MJ-eiS" secondAttribute="trailing" constant="8" id="6G1-pf-Qur"/>
+                <constraint firstItem="oG2-zP-Lcf" firstAttribute="trailing" secondItem="NUS-MJ-eiS" secondAttribute="trailing" id="9mF-Nd-hB8"/>
+                <constraint firstItem="fOO-S8-yBF" firstAttribute="trailing" secondItem="jna-Qh-8yF" secondAttribute="trailing" id="D55-xl-uZg"/>
+                <constraint firstAttribute="bottom" secondItem="fOO-S8-yBF" secondAttribute="bottom" constant="8" id="RUT-AY-IDD"/>
+                <constraint firstItem="oG2-zP-Lcf" firstAttribute="leading" secondItem="NUS-MJ-eiS" secondAttribute="leading" id="TCm-7I-0MF"/>
+                <constraint firstItem="NUS-MJ-eiS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="X40-10-Rer"/>
+                <constraint firstItem="fOO-S8-yBF" firstAttribute="top" secondItem="jna-Qh-8yF" secondAttribute="bottom" constant="8" id="XXv-GV-5WD"/>
+                <constraint firstItem="oG2-zP-Lcf" firstAttribute="top" secondItem="NUS-MJ-eiS" secondAttribute="top" id="he6-Rr-1Ui"/>
+                <constraint firstItem="oG2-zP-Lcf" firstAttribute="bottom" secondItem="NUS-MJ-eiS" secondAttribute="bottom" id="jPB-m1-Fa6"/>
+                <constraint firstItem="NUS-MJ-eiS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="lF1-Nt-Ml0"/>
+                <constraint firstAttribute="trailing" secondItem="jna-Qh-8yF" secondAttribute="trailing" constant="70" id="sC8-Nb-yrF"/>
+                <constraint firstItem="jna-Qh-8yF" firstAttribute="top" secondItem="NUS-MJ-eiS" secondAttribute="top" id="xrn-aX-XiM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="acceptBtn" destination="fOO-S8-yBF" id="ngL-49-GBM"/>
+                <outlet property="greetInfoView" destination="jna-Qh-8yF" id="A7D-C6-ITf"/>
+                <outlet property="headBtn" destination="oG2-zP-Lcf" id="scI-Ng-dhs"/>
+                <outlet property="headImageView" destination="NUS-MJ-eiS" id="1Ka-l2-UOG"/>
+            </connections>
+            <point key="canvasLocation" x="28.985507246376812" y="363.28125"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

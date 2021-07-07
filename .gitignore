@@ -1,0 +1,13 @@
+.DS_Store
+*.xcuserstate
+project.xcworkspace
+UserInterfaceState.xcuserstate
+build/
+derivedData/
+xcuserdata
+xcuserdata/  
+UserInterface.xcuserstate
+*.xcbkptlist
+Pods
+*.ipa
+Rightly/build

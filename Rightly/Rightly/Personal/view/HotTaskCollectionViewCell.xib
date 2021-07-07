@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ITG-Dw-LYz" customClass="HotTaskCollectionViewCell" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="211" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="w2I-oY-7tk">
+                <rect key="frame" x="0.0" y="0.0" width="211" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7dw-Gl-rAG">
+                        <rect key="frame" x="0.0" y="0.0" width="211" height="102"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videotask" translatesAutoresizingMaskIntoConstraints="NO" id="Kzg-J1-NGE">
+                        <rect key="frame" x="10" y="8" width="0.0" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" id="Mja-sZ-pgQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voice task" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljS-jp-DYc">
+                        <rect key="frame" x="18" y="8" width="185" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="GVU-QG-7Gc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱神的箭卡就是登记卡就开始登记卡手机壳 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlI-5x-TGR">
+                        <rect key="frame" x="18" y="48" width="185" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="7dw-Gl-rAG" firstAttribute="leading" secondItem="w2I-oY-7tk" secondAttribute="leading" id="2Ar-u1-0hl"/>
+                    <constraint firstItem="7dw-Gl-rAG" firstAttribute="top" secondItem="w2I-oY-7tk" secondAttribute="top" id="5X4-1S-Ygn"/>
+                    <constraint firstAttribute="bottom" secondItem="7dw-Gl-rAG" secondAttribute="bottom" id="DoB-Mm-QkH"/>
+                    <constraint firstAttribute="trailing" secondItem="7dw-Gl-rAG" secondAttribute="trailing" id="FZv-00-b0y"/>
+                    <constraint firstAttribute="trailing" secondItem="ljS-jp-DYc" secondAttribute="trailing" constant="8" id="IDq-z4-Pjz"/>
+                    <constraint firstItem="Kzg-J1-NGE" firstAttribute="bottom" secondItem="ljS-jp-DYc" secondAttribute="bottom" id="Jk1-1y-VAQ"/>
+                    <constraint firstItem="Kzg-J1-NGE" firstAttribute="top" secondItem="ljS-jp-DYc" secondAttribute="top" id="NHe-Te-bRG"/>
+                    <constraint firstItem="ljS-jp-DYc" firstAttribute="leading" secondItem="Kzg-J1-NGE" secondAttribute="trailing" constant="8" symbolic="YES" id="VpT-nS-nQM"/>
+                    <constraint firstAttribute="trailing" secondItem="VlI-5x-TGR" secondAttribute="trailing" constant="8" id="YkD-cC-Epf"/>
+                    <constraint firstItem="Kzg-J1-NGE" firstAttribute="leading" secondItem="w2I-oY-7tk" secondAttribute="leading" constant="10" id="geP-a8-sbJ"/>
+                    <constraint firstItem="VlI-5x-TGR" firstAttribute="top" secondItem="ljS-jp-DYc" secondAttribute="bottom" constant="18" id="xW7-rw-cWM"/>
+                    <constraint firstItem="VlI-5x-TGR" firstAttribute="leading" secondItem="ljS-jp-DYc" secondAttribute="leading" id="xkb-tm-a2m"/>
+                    <constraint firstItem="Kzg-J1-NGE" firstAttribute="top" secondItem="w2I-oY-7tk" secondAttribute="top" constant="8" id="yRL-Jz-tkA"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="14"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </collectionViewCellContentView>
+            <size key="customSize" width="211" height="102"/>
+            <connections>
+                <outlet property="backimg" destination="7dw-Gl-rAG" id="gvO-Lo-wjz"/>
+                <outlet property="lbltask" destination="ljS-jp-DYc" id="yrb-xg-slP"/>
+                <outlet property="taskdes" destination="ljS-jp-DYc" id="wjV-9H-qBW"/>
+                <outlet property="taskdescription" destination="VlI-5x-TGR" id="HMq-nb-B6n"/>
+                <outlet property="taskimgView" destination="Kzg-J1-NGE" id="pOR-H1-fKU"/>
+            </connections>
+            <point key="canvasLocation" x="-189.13043478260872" y="-88.392857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="videotask" width="24" height="24"/>
+    </resources>
+</document>

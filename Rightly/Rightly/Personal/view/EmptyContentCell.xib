@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="234" id="bPD-E5-3w1" customClass="EmptyContentCell" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="234"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bPD-E5-3w1" id="gWP-sn-AOU">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="234"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No content." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coj-oa-fue">
+                        <rect key="frame" x="162" y="203" width="90" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="VhV-VD-qmH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyview" translatesAutoresizingMaskIntoConstraints="NO" id="ZcL-2g-8Ow">
+                        <rect key="frame" x="136.5" y="32" width="141" height="141"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="141" id="2Em-xt-ozN"/>
+                            <constraint firstAttribute="width" constant="141" id="Tgo-D2-UuD"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZcL-2g-8Ow" firstAttribute="centerX" secondItem="gWP-sn-AOU" secondAttribute="centerX" id="Hli-BJ-UqT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="coj-oa-fue" secondAttribute="bottom" constant="4" id="J3Q-aX-saq"/>
+                    <constraint firstItem="coj-oa-fue" firstAttribute="top" secondItem="ZcL-2g-8Ow" secondAttribute="bottom" constant="30" id="MEC-St-e6z"/>
+                    <constraint firstItem="coj-oa-fue" firstAttribute="centerX" secondItem="gWP-sn-AOU" secondAttribute="centerX" id="fcv-ab-7Ff"/>
+                    <constraint firstItem="ZcL-2g-8Ow" firstAttribute="top" secondItem="gWP-sn-AOU" secondAttribute="top" constant="32" id="me0-L3-Ghz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblemtpty" destination="coj-oa-fue" id="dgH-PF-ure"/>
+            </connections>
+            <point key="canvasLocation" x="-333" y="-24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="emptyview" width="141" height="141"/>
+    </resources>
+</document>

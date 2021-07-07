@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatchLocationSelectViewController" customModule="Rightly" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="9Ca-ov-tsx" id="wIH-A3-l6r"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cLH-o9-zQw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaX-3N-SkI">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5G-P5-PQF">
+                            <rect key="frame" x="20" y="7" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="RTc-Nm-v1k"/>
+                                <constraint firstAttribute="width" constant="30" id="yFa-Aj-tm5"/>
+                            </constraints>
+                            <state key="normal" image="关闭"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择学校" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBg-LN-Xlm">
+                            <rect key="frame" x="172.5" y="11.5" width="69.5" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="nEe-VO-t16"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="h5G-P5-PQF" firstAttribute="centerY" secondItem="kaX-3N-SkI" secondAttribute="centerY" id="08G-tP-2qx"/>
+                        <constraint firstItem="bBg-LN-Xlm" firstAttribute="centerX" secondItem="kaX-3N-SkI" secondAttribute="centerX" id="3id-b4-Deo"/>
+                        <constraint firstItem="bBg-LN-Xlm" firstAttribute="centerY" secondItem="kaX-3N-SkI" secondAttribute="centerY" id="55n-o7-7Bs"/>
+                        <constraint firstAttribute="height" constant="44" id="Xad-Gz-HGW"/>
+                        <constraint firstItem="h5G-P5-PQF" firstAttribute="leading" secondItem="kaX-3N-SkI" secondAttribute="leading" constant="20" id="lxh-AH-oqv"/>
+                    </constraints>
+                </view>
+                <searchBar contentMode="center" searchBarStyle="minimal" placeholder="搜索位置" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ca-ov-tsx">
+                    <rect key="frame" x="10" y="98" width="394" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="tUn-3v-J1Y"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.95234709979999999" green="0.95248371359999995" blue="0.95231717819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <offsetWrapper key="searchTextPositionAdjustment" horizontal="10" vertical="0.0"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" enablesReturnKeyAutomatically="YES"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </searchBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9Ca-ov-tsx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="CUM-vs-zhC"/>
+                <constraint firstItem="9Ca-ov-tsx" firstAttribute="top" secondItem="kaX-3N-SkI" secondAttribute="bottom" constant="10" id="WbB-1n-ZdC"/>
+                <constraint firstItem="kaX-3N-SkI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YsA-1F-qax"/>
+                <constraint firstItem="kaX-3N-SkI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="sEE-sh-O6E"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9Ca-ov-tsx" secondAttribute="trailing" constant="10" id="uP4-BY-GQu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kaX-3N-SkI" secondAttribute="trailing" id="xzV-nL-xXJ"/>
+            </constraints>
+            <point key="canvasLocation" x="-68.115942028985515" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="关闭" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="111" id="KWA-mV-C4Z" customClass="PersonalOtherUnlockMoreCell" customModule="Rightly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KWA-mV-C4Z" id="m19-t4-aiQ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="odb-d3-ccz">
+                        <rect key="frame" x="0.0" y="51" width="414" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="—— 解锁首页查看更多动态 ——" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGT-sj-0J2">
+                                <rect key="frame" x="0.0" y="1.5" width="414" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.897361517" green="0.8974906802" blue="0.89733326440000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="7H1-91-Tcz"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="odb-d3-ccz" secondAttribute="bottom" constant="40" id="Uyo-sr-6Hx"/>
+                    <constraint firstAttribute="trailing" secondItem="odb-d3-ccz" secondAttribute="trailing" id="am8-cm-69b"/>
+                    <constraint firstItem="odb-d3-ccz" firstAttribute="leading" secondItem="m19-t4-aiQ" secondAttribute="leading" id="hCC-Pk-CVE"/>
+                    <constraint firstItem="odb-d3-ccz" firstAttribute="top" secondItem="m19-t4-aiQ" secondAttribute="topMargin" constant="40" id="jsL-4M-QMM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblemtpty" destination="PGT-sj-0J2" id="TXM-lz-w7Q"/>
+            </connections>
+            <point key="canvasLocation" x="-807.24637681159425" y="-143.30357142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
